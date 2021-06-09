@@ -35,10 +35,12 @@ namespace ProductionManagement
                 Manager mg = new Manager();
                 this.Hide();
                 mg.Show();
+
+                MessageBox.Show("Login Successfull..!!", "LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Enter correct username and password please!");
+                MessageBox.Show("Enter correct username and password please!","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
     }
